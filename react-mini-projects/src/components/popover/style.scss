@@ -1,0 +1,19 @@
+.popover {
+    position: relative;
+    top: 30vh;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    background: white;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    height: 300px;
+}
+.content-hidden {
+    visibility: hidden;
+    height: 300px;
+}
