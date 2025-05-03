@@ -3,7 +3,6 @@ import './App.css'
 import Popover from './components/popover/Popover'
 
 function App() {
-  const [showPage, setShowPage] = useState(0)
 
   return (
     <div>
