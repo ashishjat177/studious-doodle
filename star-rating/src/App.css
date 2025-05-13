@@ -1,0 +1,18 @@
+.star-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.star {
+  font-size: 50px;
+  cursor: pointer;
+}
+.active {
+  color: gold;
+}
+
+.star:hover {
+  color: gold;
+}
