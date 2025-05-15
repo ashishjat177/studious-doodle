@@ -1,0 +1,7 @@
+.tabs-container {
+  border: 1px solid gray;
+}
+
+.active-tab {
+  background-color: gray;
+}
