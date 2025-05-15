@@ -1,0 +1,31 @@
+
+    [
+        {
+        "label": "root comment",
+        "id": "1",
+        "children": [
+            {
+                "label": "hello comment",
+                "id": "1.1",
+                "children": [
+                    {
+                        "label": "thirdddd child",
+                        "id": "1.1.1",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "label": "hello 2",
+                "id": "1.2",
+                "children": [
+                    {
+                        "label": "third child",
+                        "id": "1.2.1",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+    ]

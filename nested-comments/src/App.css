@@ -1,0 +1,48 @@
+.comment-container {
+  margin-left: 20px;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  border:none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.reply-btn {
+  color: green;
+  margin-right: 5px;
+}
+.delete-btn {
+  color: red;
+}
+
+.reply-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.reply-input {
+  padding: 5px;
+  width: 200px;
+}
+
+.reply-post-btn {
+  background: blue;
+  border: 1px solid;
+  color: white;
+  padding: 5px 10px;
+}
+
+.comment-box {
+  margin-bottom: 10px;
+}
+.nested-comments {
+  margin-left: 20px;
+}
