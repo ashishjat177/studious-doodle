@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-dropdown {
+    width: 150px;
+    height: 40px;
+    background: lightgray;
+    border-radius: 4px;
+}
