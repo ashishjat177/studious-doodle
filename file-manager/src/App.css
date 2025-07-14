@@ -1,0 +1,44 @@
+.main-container {
+  text-align: left;
+  margin-left: 500px;
+}
+.parent-container {
+  display: flex;
+  padding: 5px 0;
+  gap: 10px;
+  gap: 5px;
+  margin: 5px;
+}
+
+.action-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.action-btns button { 
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.nested-container {
+  margin-left: 10px;
+  border-left: 1px solid;
+  padding-left: 20px;
+}
+
+.arrow {
+  transition: 0.2s ease-in-out;
+  margin-right: 5px;
+}
+.arrow button:focus-visible, button:focus, button:hover {
+  outline: none;
+  border: none;
+}
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+button {
+  padding: 0;
+  background: none;
+}

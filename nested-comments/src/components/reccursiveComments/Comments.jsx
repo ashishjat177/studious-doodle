@@ -18,7 +18,6 @@ const Comments = ({commentData, setCommentData, onReply, onDeleteComment}) => {
                 {showReplyInput === id && showComment[id] && <ReplyInput handleReply={(value) => {onReply(value, id); setShowReplyInput(0)} }/>}
                 
                 {children.length > 0 && showComment[id] && <Comments commentData={children} setCommentData={setCommentData} onReply={onReply} onDeleteComment={onDeleteComment}/>}
-
                </>
             ))}
         </div>
