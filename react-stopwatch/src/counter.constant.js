@@ -1,0 +1,7 @@
+export const COUNTER_UNITS = {
+    SECONDS: 'seconds',
+    HOURS: 'hours',
+    MINUTES: 'minutes',
+}
+
+export const COUNTER_INPUTS_DATA = [COUNTER_UNITS.HOURS, COUNTER_UNITS.MINUTES, COUNTER_UNITS.SECONDS]
