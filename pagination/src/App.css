@@ -1,0 +1,31 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.active {
+  pointer-events: none;
+  cursor: default;
+  background-color: white;
+  color: gray;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  gap: 10px;
+  height: 400px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-container img {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+}
