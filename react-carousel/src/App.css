@@ -1,0 +1,29 @@
+.carousel-container {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  align-items: top;
+}
+
+.carousel-container img {
+  width: 100vw;
+  height: 800px;
+}
+
+.carousel-container button {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  font-size: 20px;
+  align-self: center;
+}
+
+.button-left {
+  left: 0;
+}
+
+.button-right {
+  right: 0;
+}
+
