@@ -25,7 +25,7 @@ const TypeAhead = () => {
         cache.current.set(key, data);
 
         if(cache.current.size >= CACHE_LIMIT ) {
-           const firstElement = cache.current.keys().next().value[0];
+           const firstElement = cache.current.keys().next().value;
            cache.current.delete(firstElement);
         }
     }

@@ -32,27 +32,26 @@ export function ToastrContainer({ children }) {
     }, [])
 
     useEffect(() => {
-        const unubscribe = pubSub.subscribe('toast', ({type, text, duration = 3000}) => {
-            const id = new Date() + Math.random();
+        const unsubscribe = pubSub.subscribe('toast', ({type, text, duration = config.duration}) => {
+            const id = Date.now() + Math.random().toString(36).substr(2, 9);
             const toast = {
                 id,
                 text,
-                type
+                type,
+                duration
             }
             
             setToasts((prev) => {
                 if(prev.length < config.maxLimit) {
                     setTimeout(() => removeToasts(id), duration);
-                    const updated = [...prev, toast];
-                    return updated;
-                } else {
-                    setQueue((prev) => ([...prev, toast]));
-                    return prev;
+                    return [...prev, toast];
                 }
-            })
-        })
+                setQueue((prevQueue) => [...prevQueue, toast]);
+                return prev;
+            });
+        });
         
-       return () => unubscribe();
+       return () => unsubscribe();
     }, [removeToasts]);
 
 
@@ -71,4 +70,5 @@ export function ToastrContainer({ children }) {
   )
 }
 
+export default ToastrContainer;
 export default ToastrContainer;

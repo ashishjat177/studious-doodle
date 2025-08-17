@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Post from "./Post";
+import Virtualization from "./Virtualization";
 
 const InfiniteScroll = ({ totalPages = 10 }) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -49,11 +51,7 @@ const InfiniteScroll = ({ totalPages = 10 }) => {
 
     return (
         <div className="infine-scroll-container">
-            {list.map((item, index) => (
-                <div key={`${item.id}-${index}`}>
-                    <img src={item.download_url} alt={item.author} height={400} width={300}/>
-                </div>
-            ))}
+            <Virtualization list={list} totalPages={totalPages}/>
 
             {isLoading && <div>Loading...</div>}
             <div style={{height: '80px'}} ref={loaderRef}></div>
