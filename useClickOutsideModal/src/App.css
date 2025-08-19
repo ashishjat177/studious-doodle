@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal-backdrop {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.modal-container {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid gray;
+  border-radius: 2px;
+  z-index: 5;
+  position: relative;
+  background: white;
+  color: black;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+}
+
+.modal-body {
+   padding: 10px 20px;
+}
